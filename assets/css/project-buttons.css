@@ -1,0 +1,50 @@
+/* Project action buttons */
+.project-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.project-action-btn {
+  padding: 8px 16px;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.project-action-btn.github {
+  background-color: #333;
+  color: white;
+}
+
+.project-action-btn.demo {
+  background-color: #333;
+  color: white;
+}
+
+.project-action-btn.media {
+  background-color: #333;
+  color: white;
+}
+
+.project-action-btn:hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* Button hover fix */
+.tj-btn-primary-2:hover {
+  color: var(--tj-white) !important;
+}
+
+/* Project title hover fix */
+.project-left-content .project_content .title a:hover {
+  color: var(--tj-theme-primary) !important;
+}
