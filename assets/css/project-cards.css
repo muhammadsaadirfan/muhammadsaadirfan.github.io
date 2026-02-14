@@ -1,0 +1,122 @@
+/* Project Cards Standardization */
+.project-content-area {
+  margin-bottom: 50px;
+  transition: all 0.3s ease;
+}
+
+.project-content-area.featured {
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+  border: 1px solid #eee;
+}
+
+.project-wrapper {
+  margin-bottom: 20px;
+}
+
+.project-wrapper img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.project-wrapper:hover img {
+  transform: scale(1.02);
+}
+
+.project-left-content {
+  padding: 0 20px;
+}
+
+.project_content {
+  margin-bottom: 20px;
+}
+
+.project_content .subtitle {
+  display: block;
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+.project_content .title {
+  margin-bottom: 15px;
+}
+
+.project_content .title a {
+  color: #222;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.project_content .title a:hover {
+  color: #4a6fa5;
+}
+
+.project_content .desc {
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.project_tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+  padding-left: 0;
+}
+
+.project_tags li {
+  list-style: none;
+}
+
+.project_tags li a {
+  display: block;
+  padding: 6px 14px;
+  background: #f8f9fa;
+  color: #555;
+  border-radius: 20px;
+  font-size: 13px;
+  text-decoration: none;
+  border: 1px solid #ddd;
+  transition: all 0.3s ease;
+}
+
+.project_tags li a:hover {
+  background: #4a6fa5;
+  color: white;
+  border-color: #4a6fa5;
+}
+
+/* Ensure all project cards have consistent height */
+.project-content-area.featured {
+  min-height: 500px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Responsive adjustments */
+@media (min-width: 768px) {
+  .project-content-area.featured {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .project-wrapper {
+    flex: 0 0 45%;
+    margin-bottom: 0;
+  }
+
+  .project-left-content {
+    flex: 1;
+    padding: 0 30px;
+  }
+}

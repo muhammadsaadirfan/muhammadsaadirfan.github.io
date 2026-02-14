@@ -1,0 +1,2124 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+   <!-- ========================================
+        META TAGS & CONFIGURATION
+        ======================================== -->
+   <meta charset="utf-8" />
+   <meta http-equiv="x-ua-compatible" content="ie=edge" />
+   <meta name="viewport" content="width=device-width, initial-scale=1" />
+   <meta name="description"
+      content="Portfolio website of Muhammad Saad, MS Robotics, showcasing skills, projects, and research papers in robotics and AI." />
+
+   <!-- ========================================
+        PAGE TITLE & FAVICONS
+        ======================================== -->
+   <title>Muhammad Saad - Robotics Portfolio</title>
+   <link rel="apple-touch-icon" href="assets/img/logo/logo-main.png" />
+   <link rel="shortcut icon" type="image/png" href="assets/img/logo-main.png" />
+
+   <!-- ========================================
+        EXTERNAL STYLESHEETS
+        ======================================== -->
+   <!-- Animation & Effects -->
+   <link rel="stylesheet" href="assets/css/animate.min.css" />
+   <link rel="stylesheet" href="assets/css/wow.min.css" />
+   
+   <!-- Bootstrap Framework -->
+   <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+   
+   <!-- Icons & Fonts -->
+   <link rel="stylesheet" href="assets/css/font-awesome-pro.min.css" />
+   <link rel="stylesheet" href="assets/css/flaticon_gerold.css" />
+   
+   <!-- UI Components -->
+   <link rel="stylesheet" href="assets/css/nice-select.css" />
+   <link rel="stylesheet" href="assets/css/backToTop.css" />
+   
+   <!-- Sliders & Carousels -->
+   <link rel="stylesheet" href="assets/css/owl.carousel.min.css" />
+   <link rel="stylesheet" href="assets/css/swiper.min.css" />
+   
+   <!-- Additional Plugins -->
+   <link rel="stylesheet" href="assets/css/odometer-theme-default.css" />
+   <link rel="stylesheet" href="assets/css/magnific-popup.css" />
+   
+   <!-- Custom Styles -->
+   <link rel="stylesheet" href="assets/css/main.css" />
+   <link rel="stylesheet" href="assets/css/main-2.css" />
+   <link rel="stylesheet" href="assets/css/light-mode.css" />
+   <link rel="stylesheet" href="assets/css/meanmenu.css" />
+   <link rel="stylesheet" href="assets/css/responsive.css" />
+   <link rel="stylesheet" href="assets/css/responsive-2.css" />
+   <link rel="stylesheet" href="assets/css/typing-animation.css" />
+   <link rel="stylesheet" href="assets/css/project-buttons.css" />
+
+   <!-- ========================================
+        BEAUTIFUL BACKGROUNDS - ANIMATED EFFECTS
+        ======================================== -->
+   <script type="module">
+      import { BbStarTrail } from 'https://esm.sh/beautiful-backgrounds';
+   </script>
+</head>
+
+<body>
+
+   <!-- ========================================
+        ANIMATED BACKGROUND - DIGITAL RAIN EFFECT
+        ======================================== -->
+   <bb-digital-rain 
+      style="position: fixed; inset: 0; width: 100%; height: 100%; z-index: -1;" 
+      speed="7"
+      characters="-  \/ " 
+      randomness="0.98" 
+      font-size="12" 
+      font-color-hue-start="261" 
+      font-color-hue-end="289"
+      font-color-saturation-start="87" 
+      font-color-saturation-end="100" 
+      font-color-lightness-start="43"
+      font-color-lightness-end="55" 
+      bg-colors="#ffffff" 
+      bg-angle="0" 
+      trail-opacity="0.1"
+      font-colors="#000">
+   </bb-digital-rain>
+
+   <!-- ========================================
+        PRELOADER - LOADING ANIMATION
+        ======================================== -->
+   <div class="preloader">
+      <!-- SVG Animation Path -->
+      <svg viewBox="0 0 1000 1000" preserveAspectRatio="none">
+         <path id="preloaderSvg" d="M0,1005S175,995,500,995s500,5,500,5V0H0Z"></path>
+      </svg>
+
+      <!-- Loading Text Animation -->
+      <div class="preloader-heading">
+         <div class="load-text">
+            <span>L</span>
+            <span>o</span>
+            <span>a</span>
+            <span>d</span>
+            <span>i</span>
+            <span>n</span>
+            <span>g</span>
+         </div>
+      </div>
+   </div>
+
+   <!-- ========================================
+        BACK TO TOP BUTTON
+        ======================================== -->
+   <div class="progress-wrap" id="scrollUp">
+      <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+         <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+      </svg>
+   </div>
+
+   <!-- ========================================
+        HEADER - ABSOLUTE POSITIONED (FOR HERO SECTION)
+        ======================================== -->
+   <header class="tj-header-area style-2 header-absolute">
+      <div class="container">
+         <div class="row">
+            <div class="col-12 d-flex flex-wrap align-items-center">
+               
+               <!-- Logo -->
+               <div class="logo-box">
+                  <a href="index.html">
+                     <img src="assets/img/logo/logo.png" alt="Muhammad Saad Logo" />
+                  </a>
+               </div>
+
+               <!-- Navigation Menu -->
+               <div class="header-menu" id="headerMenu">
+                  <nav>
+                     <ul>
+                        <li><a href="#intro">Home</a></li>
+                        <li><a href="#publications">Publications</a></li>
+                        <li><a href="#skills-section">Skills</a></li>
+                        <li><a href="#portfolio-section">Projects</a></li>
+                        <li><a href="#achievements">Achievements</a></li>
+                        <li><a href="#contact-section">Contact</a></li>
+                     </ul>
+                  </nav>
+               </div>
+
+               <!-- Mobile Menu Placeholder -->
+               <div class="mobile-menu d-lg-none"></div>
+
+               <!-- Resume Download Button -->
+               <div class="header-button">
+                  <a href="assets/resume/MuhammadSaad.pdf" class="tj-btn-primary-2">
+                     Resume
+                     <span class="icon_box">
+                        <i class="flaticon-download icon_first"></i>
+                        <i class="flaticon-download icon_second"></i>
+                     </span>
+                  </a>
+               </div>
+
+               <!-- Mobile Menu Toggle Button -->
+               <div class="menu-bar d-lg-none">
+                  <button>
+                     <span></span>
+                     <span></span>
+                     <span></span>
+                     <span></span>
+                  </button>
+               </div>
+
+            </div>
+         </div>
+      </div>
+   </header>
+
+   <!-- ========================================
+        STICKY HEADER (APPEARS ON SCROLL)
+        ======================================== -->
+   <header class="tj-header-area style-2 header-2 header-sticky sticky-out">
+      <div class="container">
+         <div class="row">
+            <div class="col-12 d-flex flex-wrap align-items-center">
+               
+               <!-- Logo -->
+               <div class="logo-box">
+                  <a href="index.html">
+                     <img src="assets/img/logo/logo.png" alt="Muhammad Saad Logo" />
+                  </a>
+               </div>
+
+               <!-- Header Info (Hidden on Mobile) -->
+               <div class="header-info-list d-none d-md-inline-block">
+                  <ul class="ul-reset">
+                     <li><a href="/cdn-cgi/l/email-protection#7b"></a></li>
+                  </ul>
+               </div>
+
+               <!-- Navigation Menu -->
+               <div class="header-menu">
+                  <nav>
+                     <ul>
+                        <li><a href="#intro">Home</a></li>
+                        <li><a href="#publications">Publications</a></li>
+                        <li><a href="#skills-section">Skills</a></li>
+                        <li><a href="#portfolio-section">Projects</a></li>
+                        <li><a href="#achievements">Achievements</a></li>
+                        <li><a href="#contact-section">Contact</a></li>
+                     </ul>
+                  </nav>
+               </div>
+
+               <!-- Mobile Menu Placeholder -->
+               <div class="mobile-menu d-lg-none"></div>
+
+               <!-- Resume Download Button -->
+               <div class="header-button">
+                  <a href="assets/resume/MuhammadSaad.pdf" class="tj-btn-primary-2">
+                     Resume
+                     <span class="icon_box">
+                        <i class="flaticon-download icon_first"></i>
+                        <i class="flaticon-download icon_second"></i>
+                     </span>
+                  </a>
+               </div>
+
+               <!-- Mobile Menu Toggle -->
+               <div class="menu-bar d-lg-none">
+                  <button>
+                     <span></span>
+                     <span></span>
+                     <span></span>
+                     <span></span>
+                  </button>
+               </div>
+
+            </div>
+         </div>
+      </div>
+   </header>
+
+   <!-- ========================================
+        MAIN CONTENT AREA
+        ======================================== -->
+   <main class="site-content" id="content">
+
+      <!-- ========================================
+           HERO SECTION - INTRODUCTION
+           ======================================== -->
+      <section class="hero-section style-2 d-flex align-items-center" id="intro">
+         <div class="container">
+            <div class="row">
+               <div class="col-12">
+                  <div class="hero-wrrapper wow fadeInUp" data-wow-delay=".4s">
+
+                     <div class="row align-items-center">
+
+                        <!-- LEFT COLUMN: Profile Image (Visible on All Devices) -->
+                        <div class="col-md-3 d-flex justify-content-center">
+                           <div class="hero-image-box">
+                              <img src="assets/img/photo-logo.png" 
+                                   alt="Muhammad Saad Portrait" 
+                                   class="img-fluid rounded-circle profile-image"
+                                   style="max-width: 260px;">
+                           </div>
+                        </div>
+
+                        <!-- CENTER COLUMN: Main Introduction Text -->
+                        <div class="col-md-6 text-center text-md-start">
+                           <!-- Name & Title -->
+                           <h1 class="hero-title">
+                              Hi, I am <br /><strong>Muhammad Saad</strong>
+                           </h1>
+
+                           <!-- Animated Typing Roles -->
+                           <!-- <div class="typing-container">
+                              Robotics Software Engineer | Mechatronics & Control Engineer | Roboticist
+                           </div> -->
+
+                           <!-- Bio Description -->
+                           <p class="lead mt-3">
+                              I believe robotics is the art of turning code into motion, sensors into sight,
+                              and data into decisions. I develop systems that navigate uncertainty with 
+                              intelligence and purpose.
+                           </p>
+
+                           <!-- Action Buttons & Social Links -->
+                           <div class="button-box d-flex flex-wrap align-items-center gap-3">
+                              
+                              <!-- Resume Button -->
+                              <!-- <a href="assets/resume/MuhammadSaad.pdf" class="tj-btn-primary-2">
+                                 Resume
+                              </a> -->
+
+                              <!-- Social Media Icons -->
+                              <ul class="ul-reset social-icons style-2">
+                                 <li>
+                                    <a href="https://www.linkedin.com/in/muhammad-saad-irfan/" 
+                                       aria-label="LinkedIn Profile">
+                                       <i class="fa-brands fa-linkedin-in"></i>
+                                    </a>
+                                 </li>
+                                 <li>
+                                    <a href="https://github.com/muhammadsaadirfan" 
+                                       aria-label="GitHub Profile">
+                                       <i class="fa-brands fa-github"></i>
+                                    </a>
+                                 </li>
+                                 <li>
+                                    <a href="https://wa.me/923174100149" 
+                                       aria-label="WhatsApp Contact">
+                                       <i class="fa-brands fa-whatsapp"></i>
+                                    </a>
+                                 </li>
+                              </ul>
+
+                              <!-- Email Contact Pill -->
+                              <a href="mailto:saad.robotics.dev@gmail.com" class="email-pill">
+                                 <strong>saad[dot]robotics[dot]dev[at]gmail[dot]com</strong>
+                              </a>
+
+                           </div>
+                        </div>
+
+                        <!-- RIGHT COLUMN: Animated Video -->
+                        <div class="col-md-3 justify-content-center">
+                           <div class="video-wrapper" style="width:260px; height:360px;">
+                              <video autoplay loop muted playsinline 
+                                     style="width:120%; height:110%; object-fit:cover;">
+                                 <source src="assets/animated.mp4" type="video/mp4">
+                                 Your browser does not support the video tag.
+                              </video>
+                           </div>
+                        </div>
+
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+            <!-- ========================================
+                 FUN FACTS / STATISTICS SECTION
+                 ======================================== -->
+            <div class="funfact-area style-2">
+               
+               <!-- Years of Experience -->
+               <div class="funfact-item wow fadeInUp" data-wow-delay=".3s">
+                  <div class="funfact-icon">
+                     <i class="flaticon-trophy"></i>
+                  </div>
+                  <div class="number">
+                     <span class="odometer" data-count="2">0</span>+
+                  </div>
+                  <div class="text">Years Experience</div>
+               </div>
+
+               <!-- Number of Projects -->
+               <div class="funfact-item wow fadeInUp" data-wow-delay=".4s">
+                  <div class="funfact-icon">
+                     <i class="flaticon-suitcase"></i>
+                  </div>
+                  <div class="number">
+                     <span class="odometer" data-count="15">0</span>+
+                  </div>
+                  <div class="text">Projects</div>
+               </div>
+
+               <!-- Research Papers Published -->
+               <div class="funfact-item wow fadeInUp" data-wow-delay=".5s">
+                  <div class="funfact-icon">
+                     <i class="flaticon-menu"></i>
+                  </div>
+                  <div class="number">
+                     <span class="odometer" data-count="1">0</span>+
+                  </div>
+                  <div class="text">Research Papers</div>
+               </div>
+
+               <!-- Technical Skills Count -->
+               <div class="funfact-item wow fadeInUp" data-wow-delay=".6s">
+                  <div class="funfact-icon">
+                     <i class="flaticon-crown"></i>
+                  </div>
+                  <div class="number">
+                     <span class="odometer" data-count="20">0</span>+
+                  </div>
+                  <div class="text">Technical Skills</div>
+               </div>
+
+            </div>
+
+            <!-- ========================================
+                 EDUCATION SECTION
+                 ======================================== -->
+            <div class="row mt-5">
+               <div class="col-lg-12">
+                  <div class="education-card"
+                     style="background:#cdccd3d5; border-radius:16px; padding:30px; margin-bottom:35px;
+                            box-shadow:0 10px 26px rgba(0,0,0,0.07); border:1px solid #cdccd3d5;">
+
+                     <!-- Section Header -->
+                     <div style="display:flex; align-items:center; margin-bottom:22px;
+                                 padding-bottom:16px; border-bottom:1px solid #000000d5;">
+                        <div style="margin-right:14px; color:#222; font-size:36px;">
+                           <i class="flaticon-graduation-cap"></i>
+                        </div>
+                        <h3 style="margin:0; font-size:42px; color:#222;">Education</h3>
+                     </div>
+
+                     <!-- Content Row -->
+                     <div style="display:flex; gap:30px; align-items:flex-start; flex-wrap:wrap;">
+
+                        <!-- LEFT: Educational Details -->
+                        <div style="flex:1; min-width:320px;">
+                           <!-- Degree Title -->
+                           <h4 style="margin-top:0; margin-bottom:12px; color:#222;">
+                              B.Sc Mechatronics & Control Engineering
+                           </h4>
+
+                           <!-- University Name -->
+                           <p style="font-weight:600; color:#444; margin-bottom:6px;">
+                              University of Engineering and Technology, Lahore
+                           </p>
+
+                           <!-- Duration -->
+                           <p style="font-size:14px; color:#777; margin-bottom:16px;">
+                              2023 – Present (Expected 2027)
+                           </p>
+
+                           <!-- Relevant Courses -->
+                           <div style="display:flex; flex-wrap:wrap; gap:12px;">
+                              <span class="course-pill">Control Systems</span>
+                              <span class="course-pill">Embedded Systems</span>
+                              <span class="course-pill">Robotics</span>
+                              <span class="course-pill">Computer Programming (Python)</span>
+                              <span class="course-pill">Computer Programming (C)</span>
+                              <span class="course-pill">Signal Processing</span>
+                              <span class="course-pill">Modelling and Simulation</span>
+                              <span class="course-pill">Digital Logic and Design</span>
+                              <span class="course-pill">Hydraulics and Pneumatics</span>
+                              <span class="course-pill">Probability and Statistics</span>
+                              <span class="course-pill">Linear Algebra</span>
+                              <span class="course-pill">Instrumentation and Measurements</span>
+                           </div>
+                        </div>
+
+                        <!-- RIGHT: University Campus Image -->
+                        <div style="flex-shrink:0; width:800px; max-width:100%;">
+                           <img src="assets/img/uet.jpeg" 
+                                alt="UET Lahore Campus" 
+                                style="width:100%; height:auto; aspect-ratio:800/533;
+                                       object-fit:cover; border-radius:16px;
+                                       box-shadow:0 8px 24px rgba(0,0,0,0.18);">
+                        </div>
+
+                     </div>
+                  </div>
+               </div>
+
+               <!-- ========================================
+                    EXPERIENCE SECTION
+                    ======================================== -->
+               <div class="col-lg-12">
+                  <div class="experience-card"
+                     style="background:#cdccd3d5; border-radius:16px; padding:30px; margin-bottom:35px;
+                            box-shadow:0 10px 26px rgba(0,0,0,0.07); border:1px solid #eee;">
+
+                     <!-- Section Header -->
+                     <div style="display:flex; align-items:center; margin-bottom:22px; 
+                                 padding-bottom:16px; border-bottom:1px solid #000000;">
+                        <div style="margin-right:14px; color:#222; font-size:36px;">
+                           <i class="flaticon-suitcase"></i>
+                        </div>
+                        <h3 style="margin:0; font-size:42px; color:#222;">Experience</h3>
+                     </div>
+
+                     <!-- Content Row -->
+                     <div style="display:flex; gap:30px; align-items:flex-start; flex-wrap:wrap;">
+
+                        <!-- LEFT: Experience Details -->
+                        <div style="flex:1; min-width:320px;">
+                           <!-- Organization Name -->
+                           <h4 style="margin-top:0; margin-bottom:6px; color:#222;">
+                              Human Centered Robotics Lab (HCRL) of NCRA
+                           </h4>
+
+                           <!-- Role -->
+                           <p style="font-size:16px; color:#333; margin-bottom:6px;">
+                              <strong>Role:</strong> Robotics Research Intern
+                           </p>
+
+                           <!-- Duration -->
+                           <p style="font-size:14px; color:#5a5858; margin-bottom:12px;">
+                              June 2025 – August 2025
+                           </p>
+
+                           <!-- Supervisor -->
+                           <p style="font-size:16px; color:#333; margin-bottom:12px;">
+                              <strong>Supervisor:</strong> 
+                              <a href="https://scholar.google.com/citations?user=n7WtXpIAAAAJ&hl=en" 
+                                 target="_blank"
+                                 style="color:#000000;">Dr. Ali Raza</a>
+                           </p>
+
+                           <!-- Key Achievements & Responsibilities -->
+                           <ul style="font-size:16px; color:#000000; margin-bottom:16px; 
+                                      padding-left:20px; line-height:1.6;">
+                              <li>
+                                 Develop a <strong>ROS</strong>-based package for 
+                                 <strong>human-aware navigation</strong> on a mobile robot 
+                                 developed by the HCR Lab.
+                              </li>
+                              <li>
+                                 Use a multi-modal approach involving both 
+                                 <strong>Intel Realsense D435</strong> and <strong>LiDAR</strong> 
+                                 mounted on the robot-base.
+                              </li>
+                              <li>
+                                 Implement this multi-modal, region-focused strategy on an 
+                                 edge-device <strong>Jetson Nano</strong> without compromising 
+                                 human-safety.
+                              </li>
+                              <li>
+                                 Present this work in a leading Pakistani conference 
+                                 <strong>(paper title: Human Awareness for Mobile Robot Navigation 
+                                 on a Resource-Constrained Jetson Nano, presented in INMIC-2025).</strong>
+                              </li>
+                           </ul>
+
+                           <!-- Skills Used -->
+                           <div style="display:flex; flex-wrap:wrap; gap:12px;">
+                              <span class="skill-pill">Robot Operating System</span>
+                              <span class="skill-pill">Machine Learning</span>
+                              <span class="skill-pill">NanoDet</span>
+                              <span class="skill-pill">YOLO</span>
+                              <span class="skill-pill">Python</span>
+                              <span class="skill-pill">C++</span>
+                              <span class="skill-pill">Robotics</span>
+                           </div>
+                        </div>
+
+                        <!-- RIGHT: Lab Image -->
+                        <div style="flex-shrink:0; width:400px; max-width:100%;">
+                           <img src="assets/img/hcrl.jpeg" 
+                                alt="Human Centered Robotics Lab"
+                                style="width:100%; height:auto; aspect-ratio:800/800; 
+                                       object-fit:cover; border-radius:16px; 
+                                       box-shadow:0 8px 24px rgba(0,0,0,0.18);">
+                        </div>
+
+                     </div>
+                  </div>
+               </div>
+
+            </div>
+
+         </div>
+      </section>
+
+      <!-- ========================================
+           PUBLICATIONS SECTION
+           ======================================== -->
+      <section class="blog-section style-2" id="publications" 
+               style="color:#222; padding:60px 0;">
+         <div class="container">
+
+            <!-- Section Header -->
+            <div class="row">
+               <div class="col-xl-6 offset-xl-3">
+                  <div class="section-header style-2 text-center">
+                     <h2 class="section-title wow fadeInUp" data-wow-delay=".3s" 
+                         style="color:#222;">
+                        Academic Publications
+                     </h2>
+                     <p class="wow fadeInUp" data-wow-delay=".5s" style="color:#555;">
+                        Research papers published in peer-reviewed conferences
+                     </p>
+                  </div>
+               </div>
+            </div>
+
+            <!-- Publications List -->
+            <div class="row mt-5">
+
+               <!-- Publication Card -->
+               <div class="col-12 mb-4">
+                  <div class="portfolio-item publication-item wow fadeInUp" data-wow-delay=".3s"
+                     style="background:#cdccd3d5; border-radius:16px; padding:25px; 
+                            box-shadow:0 8px 24px rgba(0,0,0,0.08); border:1px solid #eee;">
+
+                     <div class="portfolio-inner">
+                        <div class="content-box publication-content">
+
+                           <!-- Paper Title -->
+                           <h3 class="title" style="color:#222; margin-bottom:6px;">
+                              Human Awareness for Mobile Robot Navigation on a 
+                              Resource-Constrained Jetson Nano
+                           </h3>
+
+                           <!-- Authors -->
+                           <p class="authors" style="color:#333; margin-bottom:6px; font-weight:500;">
+                              M. Saad, M. S. Yasin, A. Raza
+                           </p>
+
+                           <!-- Venue -->
+                           <p class="meta" style="color:#555; margin-bottom:6px;">
+                              27th IEEE International Multitopic Conference (INMIC 2025), Dec. 2025
+                           </p>
+
+                           <!-- Publication Status -->
+                           <p class="status" style="color:#000; font-weight:600; margin-bottom:12px;">
+                              Published in IEEE Xplore
+                           </p>
+
+                           <!-- View Paper Button -->
+                           <a href="https://ieeexplore.ieee.org/document/11348204" 
+                              target="_blank"
+                              style="display:inline-block; padding:10px 20px; 
+                                     background-color:#000000; color:#fff; font-weight:600; 
+                                     border-radius:8px; text-decoration:none;">
+                              View Paper
+                           </a>
+
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+            </div>
+         </div>
+      </section>
+
+      <!-- ========================================
+           CALL TO ACTION - COLLABORATION
+           ======================================== -->
+      <section class="cta-section">
+         <div class="container">
+            <div class="cta-wrapper dark-bg wow fadeInUp" data-wow-delay=".3s">
+               <div class="row align-items-center">
+                  
+                  <!-- CTA Text -->
+                  <div class="col-xl-5 col-lg-7">
+                     <div class="section-header">
+                        <h2 class="section-title mb-4">
+                           Interested in collaborating on robotics research?
+                        </h2>
+                        <p>
+                           Let's discuss potential research collaborations, projects, 
+                           or applications of my work in robotics and AI.
+                        </p>
+                     </div>
+                  </div>
+
+                  <!-- CTA Button -->
+                  <div class="col-xl-7 col-lg-5">
+                     <div class="cta-button">
+                        <a href="#contact-section" class="btn tj-btn-primary-2 me-lg-4 mb-4 mb-lg-0">
+                           Let's Talk
+                           <span class="icon_box">
+                              <i class="fa-regular fa-arrow-right icon_first"></i>
+                              <i class="fa-regular fa-arrow-right icon_second"></i>
+                           </span>
+                        </a>
+                     </div>
+                  </div>
+
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <!-- ========================================
+           SKILLS SECTION
+           ======================================== -->
+      <section class="skills-section style-2" id="skills-section">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <div class="container">
+
+            <!-- Section Header -->
+            <div class="row">
+               <div class="col-xl-6 offset-xl-3">
+                  <div class="section-header style-2 text-center">
+                     <h2 class="section-title wow fadeInUp" data-wow-delay=".3s" 
+                         style="color:#222;">
+                        My Skills
+                     </h2>
+                     <p class="wow fadeInUp" data-wow-delay=".5s" style="color:#555;">
+                        Specializing in robotics, artificial intelligence, computer vision, 
+                        SLAM, and autonomous systems development
+                     </p>
+                  </div>
+               </div>
+            </div>
+
+            <!-- Skills Cards Container -->
+            <div class="skills-card-wrapper">
+
+               <!-- Programming Languages -->
+               <div class="skill-card">
+                  <h3>Programming Languages</h3>
+                  <ul class="skill-list">
+                     <li>Python</li>
+                     <li>C++</li>
+                     <li>C</li>
+                     <li>MATLAB</li>
+                     <li>CUDA</li>
+                  </ul>
+               </div>
+
+               <!-- Computer Vision -->
+               <div class="skill-card">
+                  <h3>Computer Vision</h3>
+                  <ul class="skill-list">
+                     <li>Object Detection & Tracking</li>
+                     <li>Semantic Segmentation</li>
+                     <li>Stereo Visual Odometry</li>
+                     <li>Camera Calibration</li>
+                     <li>Sensor Fusion</li>
+                     <li>Visual SLAM</li>
+                     <li>Vision Language Models</li>
+                  </ul>
+               </div>
+
+               <!-- Robotics and Autonomy -->
+               <div class="skill-card">
+                  <h3>Robotics and Autonomy</h3>
+                  <ul class="skill-list">
+                     <li>SLAM</li>
+                     <li>Kalman Filter</li>
+                     <li>Model Predictive Control</li>
+                     <li>PID Control</li>
+                     <li>Path Planning Algorithms</li>
+                     <li>Multi Robot Coordination</li>
+                     <li>Coverage Path Planning</li>
+                     <li>Sim to Real Transfer</li>
+                  </ul>
+               </div>
+
+               <!-- Simulation Tools -->
+               <div class="skill-card">
+                  <h3>Simulation Tools</h3>
+                  <ul class="skill-list">
+                     <li>Gazebo</li>
+                     <li>Isaac Sim</li>
+                     <li>Weebot</li>
+                  </ul>
+               </div>
+
+               <!-- Hardware Platforms -->
+               <div class="skill-card">
+                  <h3>Hardware Platforms</h3>
+                  <ul class="skill-list">
+                     <li>NVIDIA Jetson</li>
+                     <li>Intel RealSense D435</li>
+                     <li>LiDAR</li>
+                     <li>Raspberry Pi</li>
+                     <li>Arduino</li>
+                     <li>Tiva</li>
+                     <li>ESP32</li>
+                  </ul>
+               </div>
+
+               <!-- Tools & DevOps -->
+               <div class="skill-card">
+                  <h3>Tools & DevOps</h3>
+                  <ul class="skill-list">
+                     <li>Docker</li>
+                     <li>Apptainer</li>
+                     <li>Git</li>
+                     <li>CI/CD</li>
+                     <li>Linux</li>
+                     <li>VS Code</li>
+                     <li>Jupyter</li>
+                     <li>Colab</li>
+                  </ul>
+               </div>
+
+               <!-- Soft Skills -->
+               <div class="skill-card">
+                  <h3>Soft Skills</h3>
+                  <ul class="skill-list">
+                     <li>Problem Solving</li>
+                     <li>Team Collaboration</li>
+                     <li>Mentoring</li>
+                     <li>Time Management</li>
+                     <li>Communication</li>
+                     <li>Curiosity</li>
+                     <li>Continuous Learning</li>
+                  </ul>
+               </div>
+
+            </div>
+
+         </div>
+      </section>
+
+      <!-- ========================================
+           PROJECTS SECTION
+           ======================================== -->
+      <section class="project-section" id="portfolio-section" 
+               style="margin-top: 100px; padding-bottom: 60px;">
+         <div class="container">
+
+            <!-- Section Header -->
+            <div class="row">
+               <div class="col-xl-6 offset-xl-3">
+                  <div class="section-header style-2 text-center">
+                     <h2 class="section-title wow fadeInUp" data-wow-delay=".3s" 
+                         style="color:#222;">
+                        My Projects
+                     </h2>
+                     <p class="wow fadeInUp" data-wow-delay=".5s" style="color:#555;">
+                        Specializing in robotics, artificial intelligence, computer vision, 
+                        SLAM, and autonomous systems development
+                     </p>
+                  </div>
+               </div>
+            </div>
+
+            <!-- Horizontal Projects Scroller -->
+            <div class="projects-scroller wow fadeInUp" data-wow-delay=".4s">
+               
+
+               <!-- PROJECT 1: Navitron -->
+               <div class="project-card">
+                  <div class="project-wrapper">
+                     <img src="assets/img/projects/navitron.png" 
+                          alt="Navitron: Industrial Autonomous Mobile Robot" />
+                  </div>
+                  <div class="project-content">
+                     <h3 class="title">Navitron: Industrial Autonomous Mobile Robot</h3>
+                     <ul class="project-details">
+                        <li>ROS-based package for <strong>human-aware navigation</strong> 
+                            on HCR Lab mobile robot</li>
+                        <li>Multi-modal perception using <strong>Intel Realsense D435</strong> + 
+                            <strong>LiDAR</strong></li>
+                        <li>Edge deployment on <strong>Jetson Nano</strong> with safety guarantees</li>
+                     </ul>
+                     <div class="project-actions">
+                        <a href="https://github.com/muhammadsaadirfan/Navitron-Indoor-AI-Delivery-Robot"
+                           class="project-action-btn github">
+                           <i class="fa-brands fa-github"></i> GitHub
+                        </a>
+                        <a href="https://drive.google.com/file/d/1jeP0nFda9blfn319oFRasQWTViVGn0TF/view?usp=sharing"
+                           class="project-action-btn demo">
+                           <i class="fa-solid fa-play"></i> Demo
+                        </a>
+                     </div>
+                  </div>
+               </div>
+
+               <!-- PROJECT 2: minibot -->
+               <div class="project-card">
+                  <div class="project-wrapper">
+                     <img src="assets/img/projects/minibot.png" 
+                          alt="minibot: Educational Robot" />
+                  </div>
+                  <div class="project-content">
+                     <h3 class="title">minibot: Educational Robot</h3>
+                     <ul class="project-details">
+                        <li>Educational robot for teaching robotics, navigation & sensors</li>
+                        <li>Built with <strong>ROS</strong> and <strong>Python</strong> control logic</li>
+                        <li>Features: obstacle avoidance + basic mapping</li>
+                        <li>Designed for classroom/workshop hands-on learning</li>
+                     </ul>
+                     <div class="project-actions">
+                        <a href="https://github.com/muhammadsaadirfan/minibot" 
+                           class="project-action-btn github">
+                           <i class="fa-brands fa-github"></i> GitHub
+                        </a>
+                     </div>
+                  </div>
+               </div>
+
+               <!-- PROJECT 3: Mobile Manipulator -->
+               <div class="project-card">
+                  <div class="project-wrapper">
+                     <img src="assets/img/projects/mobile_manipulator.png" 
+                          alt="Mobile Manipulator" />
+                  </div>
+                  <div class="project-content">
+                     <h3 class="title">Mobile Manipulator</h3>
+                     <p class="project-desc">
+                        Differential drive base + robotic arm for autonomous pick-and-place 
+                        in indoor environments. Built with ROS 2, MoveIt2 & Navigation Stack.
+                     </p>
+                     <ul class="project-tags">
+                        <li>NAV2</li>
+                        <li>MoveIt2</li>
+                        <li>ROS2</li>
+                        <li>Inverse Kinematics</li>
+                        <li>Gazebo</li>
+                     </ul>
+                  </div>
+               </div>
+
+               <!-- PROJECT 4: Borunte 2030a -->
+               <div class="project-card">
+                  <div class="project-wrapper">
+                     <img src="assets/img/projects/borunte_portfolio.png" 
+                          alt="Borunte 2030a" />
+                  </div>
+                  <div class="project-content">
+                     <h3 class="title">Borunte 2030a</h3>
+                     <ul class="project-details">
+                        <li>Full simulation & control framework for industrial arm</li>
+                        <li>Motion planning, IK & trajectory execution with 
+                            <strong>ROS2 + MoveIt2</strong></li>
+                        <li>Realistic testing in <strong>Gazebo</strong></li>
+                     </ul>
+                     <div class="project-actions">
+                        <a href="https://github.com/muhammadsaadirfan/Boruntee" 
+                           class="project-action-btn github">
+                           <i class="fa-brands fa-github"></i> GitHub
+                        </a>
+                     </div>
+                  </div>
+               </div>
+
+               <!-- PROJECT 5: Universal Robot 5 Simulation -->
+               <div class="project-card">
+                  <div class="project-wrapper">
+                     <img src="assets/img/projects/ur5_portfolio.png" 
+                          alt="Universal Robot 5 Simulation" />
+                  </div>
+                  <div class="project-content">
+                     <h3 class="title">Universal Robot 5 Simulation</h3>
+                     <ul class="project-details">
+                        <li>ROS2 + MoveIt2 simulation & control framework for UR5</li>
+                        <li>Motion planning, IK & path execution in Gazebo</li>
+                        <li>Accurate CAD models designed in SolidWorks</li>
+                     </ul>
+                     <div class="project-actions">
+                        <a href="https://github.com/muhammadsaadirfan/UR5-Simulation" 
+                           class="project-action-btn github">
+                           <i class="fa-brands fa-github"></i> GitHub
+                        </a>
+                     </div>
+                  </div>
+               </div>
+
+               <!-- PROJECT 6: Custom Ubuntu OS -->
+               <div class="project-card">
+                  <div class="project-wrapper">
+                     <img src="assets/img/projects/ubuntu_portfolio.png" 
+                          alt="Custom Ubuntu OS for Approbotics" />
+                  </div>
+                  <div class="project-content">
+                     <h3 class="title">Custom Ubuntu OS for Approbotics</h3>
+                     <ul class="project-details">
+                        <li>Lightweight Ubuntu-based OS for robotics startups</li>
+                        <li>Pre-installed ROS, Gazebo, Python tools & hardware drivers</li>
+                        <li>Plug-and-play environment for rapid prototyping</li>
+                     </ul>
+                     <div class="project-actions">
+                        <a href="https://github.com/muhammadsaadirfan/custom-ubuntu-22.04-with-sdks-installed"
+                           class="project-action-btn github">
+                           <i class="fa-brands fa-github"></i> GitHub
+                        </a>
+                     </div>
+                  </div>
+               </div>
+
+               <!-- PROJECT 7: Feedback Based Ambubag Presser -->
+               <div class="project-card">
+                  <div class="project-wrapper">
+                     <img src="assets/img/projects/ventilator_portfolio.png" 
+                          alt="Feedback Based Ambubag Presser" />
+                  </div>
+                  <div class="project-content">
+                     <h3 class="title">Feedback Based Ambubag Presser</h3>
+                     <p class="project-desc">
+                        Low-cost emergency ventilator with pressure, flow & oxygen monitoring 
+                        using embedded systems & medical-grade sensors.
+                     </p>
+                     <ul class="project-tags">
+                        <li>C</li>
+                        <li>SolidWorks</li>
+                        <li>Embedded Systems</li>
+                        <li>Tiva TM4C123GH6PM</li>
+                        <li>Stepper Motor</li>
+                        <li>PCB Designing</li>
+                     </ul>
+                  </div>
+               </div>
+
+               <!-- PROJECT 8: Face Based Security Lock -->
+               <div class="project-card">
+                  <div class="project-wrapper">
+                     <img src="assets/img/projects/face_detection.png" 
+                          alt="Face Based Security Lock" />
+                  </div>
+                  <div class="project-content">
+                     <h3 class="title">Face Based Security Lock</h3>
+                     <ul class="project-details">
+                        <li>AI-powered face detection system using Python + OpenCV</li>
+                        <li>Object-Oriented design for modularity & scalability</li>
+                        <li>Optimized for real-world security applications</li>
+                     </ul>
+                     <div class="project-actions">
+                        <a href="https://github.com/muhammadsaadirfan/Face-Detection-using-OpenCV-"
+                           class="project-action-btn github">
+                           <i class="fa-brands fa-github"></i> GitHub
+                        </a>
+                     </div>
+                  </div>
+               </div>
+
+               <!-- PROJECT 9: Connect 4 AI -->
+               <div class="project-card">
+                  <div class="project-wrapper">
+                     <img src="assets/img/projects/connect4.png" 
+                          alt="AI For Connect 4 Game" />
+                  </div>
+                  <div class="project-content">
+                     <h3 class="title">AI For Connect 4 Game</h3>
+                     <ul class="project-details">
+                        <li>Connect 4 game with AI opponent using Minimax algorithm</li>
+                        <li>Alpha-beta pruning for performance optimization</li>
+                        <li>Implemented in C with focus on efficiency</li>
+                     </ul>
+                     <div class="project-actions">
+                        <a href="https://github.com/muhammadsaadirfan/connect4-minimax.git"
+                           class="project-action-btn github">
+                           <i class="fa-brands fa-github"></i> GitHub
+                        </a>
+                     </div>
+                  </div>
+               </div>
+
+            </div>
+         </div>
+      </section>
+
+      <!-- ========================================
+           CALL TO ACTION - PROJECT COLLABORATION
+           ======================================== -->
+      <section class="cta-section">
+         <div class="container">
+            <div class="cta-wrapper dark-bg wow fadeInUp" data-wow-delay=".3s">
+               <div class="row align-items-center">
+                  
+                  <!-- CTA Text -->
+                  <div class="col-xl-5 col-lg-7">
+                     <div class="section-header">
+                        <h2 class="section-title mb-4">
+                           Interested in collaborating on robotics projects?
+                        </h2>
+                        <p>
+                           Let's discuss potential research collaborations, projects, 
+                           or applications of my work in robotics, UAV systems, and computer vision.
+                        </p>
+                     </div>
+                  </div>
+
+                  <!-- CTA Button -->
+                  <div class="col-xl-7 col-lg-5">
+                     <div class="cta-button">
+                        <a href="#contact-section" class="btn tj-btn-primary-2 me-lg-4 mb-4 mb-lg-0">
+                           Let's Talk
+                           <span class="icon_box">
+                              <i class="fa-regular fa-arrow-right icon_first"></i>
+                              <i class="fa-regular fa-arrow-right icon_second"></i>
+                           </span>
+                        </a>
+                     </div>
+                  </div>
+
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <!-- ========================================
+           ACHIEVEMENTS SECTION
+           ======================================== -->
+      <section class="achievements-section" id="achievements"
+               style="background:transparent; color:#cdccd3d5; padding:60px 0;">
+         <div class="container">
+
+            <!-- Section Header -->
+            <div class="row">
+               <div class="col-12 text-center">
+                  <h2 class="section-title" style="color:#222; margin-bottom:15px;">
+                     Achievements
+                  </h2>
+                  <p style="color:#000;">
+                     Entrepreneurial Competitions, Scholarships, Engineering Competitions, and Awards
+                  </p>
+               </div>
+            </div>
+
+            <!-- ACHIEVEMENT 1: SEE Pakistan -->
+            <div class="row mt-5">
+               <div class="col-12">
+                  <div class="achievement-card"
+                     style="background:#cdccd3d5; border-radius:16px; padding:25px; 
+                            box-shadow:0 8px 24px rgba(0,0,0,0.08); border:1px solid #eee; 
+                            display:flex; align-items:flex-start; gap:25px; flex-wrap:wrap;">
+
+                     <!-- Left: Logo + Details -->
+                     <div style="flex:1; min-width:300px; text-align:left;">
+                        <img src="assets/img/see_logo.jpeg" 
+                             alt="SEE Pakistan Logo"
+                             style="width:80px; height:80px; object-fit:cover; 
+                                    border-radius:12px; margin-bottom:15px;">
+                        
+                        <h3 style="color:#000000; font-weight:700; margin-top:0;">
+                           SEE Pakistan
+                        </h3>
+                        <h4 style="color:#000000; font-weight:600; margin-top:5px;">
+                           World Startup Championship 2025
+                        </h4>
+                        <h5 style="color:#000000; font-weight:500; margin-top:5px;">
+                           Technology and Digital Innovation Award
+                        </h5>
+
+                        <ul style="color:#555; line-height:1.6; margin-top:15px; padding-left:20px;">
+                           <li>Designed and implemented an <strong>autonomous mobile robot</strong> 
+                               capable of dynamic path planning.</li>
+                           <li>Integrated <strong>obstacle avoidance</strong> algorithms for 
+                               safe navigation in complex environments.</li>
+                           <li>Successfully demonstrated the robot in a <strong>competitive 
+                               university robotics challenge</strong>.</li>
+                        </ul>
+                     </div>
+
+                     <!-- Right: Achievement Image -->
+                     <div style="flex-shrink:0;">
+                        <img src="assets/img/seepakistan.jpeg" 
+                             alt="SEE Pakistan Award Ceremony"
+                             style="width:400px; height:400px; object-fit:cover; 
+                                    border-radius:16px; box-shadow:0 6px 16px rgba(0,0,0,0.1);">
+                     </div>
+
+                  </div>
+               </div>
+            </div>
+
+            <!-- ACHIEVEMENT 2: Human Centered Design Competition -->
+            <div class="row mt-5">
+               <div class="col-12">
+                  <div class="achievement-card"
+                     style="background:#cdccd3d5; border-radius:16px; padding:25px; 
+                            box-shadow:0 8px 24px rgba(0,0,0,0.08); border:1px solid #eee; 
+                            display:flex; align-items:flex-start; gap:25px; flex-wrap:wrap;">
+
+                     <!-- Left: Logo + Details -->
+                     <div style="flex:1; min-width:300px; text-align:left;">
+                        <img src="assets/img/made_foundation.png" 
+                             alt="Made Foundation Logo"
+                             style="width:80px; height:80px; object-fit:cover; 
+                                    border-radius:12px; margin-bottom:15px;">
+                        
+                        <h3 style="color:#000000; font-weight:700; margin-top:0;">
+                           Human Centered Design Competition
+                        </h3>
+                        <h4 style="color:#000000; font-weight:600; margin-top:5px;">
+                           Made Foundation USA
+                        </h4>
+                        <h5 style="color:#000000; font-weight:500; margin-top:5px;">
+                           3rd Position
+                        </h5>
+
+                        <ul style="color:#555; line-height:1.6; margin-top:15px; padding-left:20px;">
+                           <li>Designed and implemented an <strong>autonomous robot</strong> 
+                               capable of dynamic path planning.</li>
+                           <li>Incorporated <strong>obstacle avoidance</strong> for safe operation.</li>
+                           <li>Recognized for performance in a <strong>competitive university 
+                               robotics challenge</strong>.</li>
+                        </ul>
+                     </div>
+
+                     <!-- Right: Achievement Image -->
+                     <div style="flex-shrink:0;">
+                        <img src="assets/img/hcd1.jpg" 
+                             alt="HCD Competition"
+                             style="width:400px; height:400px; object-fit:cover; 
+                                    border-radius:16px; box-shadow:0 6px 16px rgba(0,0,0,0.1);">
+                     </div>
+
+                  </div>
+               </div>
+            </div>
+
+            <!-- ACHIEVEMENT 3: Fiverr's Choice Award -->
+            <div class="row mt-5">
+               <div class="col-12">
+                  <div class="achievement-card"
+                     style="background:#cdccd3d5; border-radius:16px; padding:25px; 
+                            box-shadow:0 8px 24px rgba(0,0,0,0.08); border:1px solid #eee; 
+                            display:flex; align-items:flex-start; gap:25px; flex-wrap:wrap;">
+
+                     <!-- Left: Logo + Details -->
+                     <div style="flex:1; min-width:300px; text-align:left;">
+                        <img src="assets/img/fiverr.svg" 
+                             alt="Fiverr Logo"
+                             style="width:80px; height:80px; object-fit:cover; 
+                                    border-radius:12px; margin-bottom:15px;">
+                        
+                        <h3 style="color:#222; font-weight:700; margin-top:0;">
+                           Fiverr's Choice Award
+                        </h3>
+                        <h4 style="color:#333; font-weight:600; margin-top:5px;">
+                           Freelance Innovation
+                        </h4>
+                        <h5 style="color:#555; font-weight:500; margin-top:5px;">
+                           Platform Recognition
+                        </h5>
+
+                        <ul style="color:#555; line-height:1.6; margin-top:15px; padding-left:20px;">
+                           <li>Recognized by <strong>Fiverr</strong> for excellence and 
+                               creativity in freelance projects.</li>
+                           <li>Implemented innovative solutions leading to <strong>high 
+                               client satisfaction</strong>.</li>
+                           <li>Earned platform-wide <strong>recognition for quality and 
+                               performance</strong>.</li>
+                        </ul>
+                     </div>
+
+                     <!-- Right: Achievement Image -->
+                     <div style="flex-shrink:0;">
+                        <img src="assets/img/fiverr_choice.png" 
+                             alt="Fiverr Choice Award"
+                             style="width:400px; height:400px; object-fit:cover; 
+                                    border-radius:16px; box-shadow:0 6px 16px rgba(0,0,0,0.1);">
+                     </div>
+
+                  </div>
+               </div>
+            </div>
+
+         </div>
+      </section>
+
+      <!-- ========================================
+           CONTACT SECTION
+           ======================================== -->
+      <section class="contact-section style-2" id="contact-section">
+         <div class="container">
+            <div class="row">
+               <div class="col-12">
+                  <div class="contact-content-area">
+                     
+                     <!-- Contact Form -->
+                     <div class="contact-form-box order-2 order-md-1 wow fadeInLeft" 
+                          data-wow-delay=".3s">
+                        <div class="section-header">
+                           <h2 class="section-title">
+                              Let's collaborate<br />on Robotics & AI!
+                           </h2>
+                           <p style="text-align: justify;">
+                              I specialize in building intelligent and efficient systems at the 
+                              intersection of Robotics and Artificial Intelligence. Whether you're 
+                              looking for a dedicated full-time engineer or want to team up on 
+                              cutting-edge projects, I'm ready to connect.
+                           </p>
+                        </div>
+
+                        <div class="tj-contact-form style-2">
+                           <!-- Form submits to Formspree -->
+                           <form action="https://formspree.io/f/meolnrqz" method="POST">
+                              
+                              <!-- First Name -->
+                              <div class="form_group">
+                                 <input type="text" 
+                                        name="conName" 
+                                        id="conName" 
+                                        placeholder="First name"
+                                        autocomplete="on" />
+                              </div>
+
+                              <!-- Last Name -->
+                              <div class="form_group">
+                                 <input type="text" 
+                                        name="conLName" 
+                                        id="conLName" 
+                                        placeholder="Last name"
+                                        autocomplete="on" />
+                              </div>
+
+                              <!-- Email -->
+                              <div class="form_group">
+                                 <input type="email" 
+                                        name="conEmail" 
+                                        id="conEmail" 
+                                        placeholder="Email address"
+                                        autocomplete="on" />
+                              </div>
+
+                              <!-- Phone -->
+                              <div class="form_group">
+                                 <input type="tel" 
+                                        name="conPhone" 
+                                        id="conPhone" 
+                                        placeholder="Phone number"
+                                        autocomplete="on" />
+                              </div>
+
+                              <!-- Message -->
+                              <div class="form_group">
+                                 <textarea name="conMessage" 
+                                           id="conMessage"
+                                           placeholder="Tell me about your project or opportunity..."></textarea>
+                              </div>
+
+                              <!-- Submit Button -->
+                              <div class="form_btn">
+                                 <button type="submit" class="btn tj-btn-primary-2">
+                                    Send Message
+                                    <span class="icon_box">
+                                       <i class="fa-regular fa-arrow-right icon_first"></i>
+                                       <i class="fa-regular fa-arrow-right icon_second"></i>
+                                    </span>
+                                 </button>
+                              </div>
+
+                           </form>
+                        </div>
+                     </div>
+
+                     <!-- Contact Information -->
+                     <div class="contact-info-list-2 order-1 order-md-2">
+                        <div class="desc wow fadeInRight" data-wow-delay=".3s">
+                           <p>
+                              I'm actively seeking full-time opportunities in Robotics and AI, 
+                              and I'm also open to collaborative projects, consulting, and 
+                              research partnerships. Let's innovate together, reach out anytime.
+                           </p>
+                        </div>
+
+                        <!-- Contact Details -->
+                        <ul class="ul-reset contact-info-list-3">
+                           <li class="wow fadeInRight" data-wow-delay=".3s">
+                              <a href="tel:+923174100149">+92 317 4100149</a>
+                           </li>
+                           <li class="wow fadeInRight" data-wow-delay=".4s">
+                              <a href="/cdn-cgi/l/email-protection#6a"></a>
+                           </li>
+                        </ul>
+
+                        <!-- Social Media Links -->
+                        <ul class="ul-reset social-icons style-3 wow fadeInRight" 
+                            data-wow-delay=".6s">
+                           <li>
+                              <a href="https://www.linkedin.com/in/muhammad-saad-irfan/" 
+                                 aria-label="LinkedIn">
+                                 <i class="fa-brands fa-linkedin-in"></i>
+                              </a>
+                           </li>
+                           <li>
+                              <a href="https://github.com/muhammadsaadirfan" 
+                                 aria-label="GitHub">
+                                 <i class="fa-brands fa-github"></i>
+                              </a>
+                           </li>
+                           <li>
+                              <a href="https://wa.me/923174100149" 
+                                 aria-label="WhatsApp">
+                                 <i class="fa-brands fa-whatsapp"></i>
+                              </a>
+                           </li>
+                        </ul>
+
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <!-- ========================================
+           CONTACT FORM MODALS
+           ======================================== -->
+      
+      <!-- Success Modal -->
+      <div class="modal contact_modal" id="message_sent" tabindex="-1">
+         <div class="modal-dialog">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <span class="modal-title">
+                     <strong>Message Sent Successfully</strong>
+                  </span>
+                  <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                     <i class="fas fa-times"></i>
+                  </button>
+               </div>
+               <div class="modal-body">
+                  <p>
+                     Thank you for contacting us. We will get back to you shortly.<br />
+                     Have a great day!
+                  </p>
+               </div>
+               <div class="modal-footer">
+                  <button type="button" class="btn" data-bs-dismiss="modal">Close</button>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <!-- Error Modal -->
+      <div class="modal contact_modal failed" id="message_fail" tabindex="-1">
+         <div class="modal-dialog">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <span class="modal-title"><strong>Error</strong></span>
+                  <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                     <i class="fas fa-times"></i>
+                  </button>
+               </div>
+               <div class="modal-body">
+                  <p>Oops! Something went wrong, please try again.</p>
+               </div>
+               <div class="modal-footer">
+                  <button type="button" class="btn" data-bs-dismiss="modal">Close</button>
+               </div>
+            </div>
+         </div>
+      </div>
+
+   </main>
+
+   <!-- ========================================
+        FOOTER
+        ======================================== -->
+   <footer class="tj-footer-area style-2">
+      <div class="container">
+         <div class="row">
+            <div class="col-md-12 text-center">
+               
+               <!-- Footer Logo -->
+               <div class="footer-logo-box">
+                  <a href="index.html#">
+                     <img src="assets/img/logo/logo.png" alt="Muhammad Saad Logo" />
+                  </a>
+               </div>
+
+               <!-- Footer Navigation -->
+               <div class="footer-menu">
+                  <nav>
+                     <ul>
+                        <li><a href="#intro">Home</a></li>
+                        <li><a href="#publications">Publications</a></li>
+                        <li><a href="#skills-section">Skills</a></li>
+                        <li><a href="#portfolio-section">Projects</a></li>
+                        <li><a href="#achievements">Achievements</a></li>
+                        <li><a href="#contact-section">Contact</a></li>
+                     </ul>
+                  </nav>
+               </div>
+
+               <!-- Copyright -->
+               <div class="copy-text style-2">
+                  <p>
+                     &copy; 2026 All rights reserved by 
+                     <a href="index.html#" style="color:#222;" target="_blank">
+                        Muhammad Saad
+                     </a>
+                  </p>
+               </div>
+
+            </div>
+         </div>
+      </div>
+   </footer>
+
+   <!-- ========================================
+        CUSTOM STYLES (INLINE)
+        ======================================== -->
+   <style>
+      /* ========================================
+         GLOBAL RESPONSIVE IMAGE & VIDEO SETTINGS
+         ======================================== */
+      * {
+         box-sizing: border-box;
+      }
+
+      img {
+         max-width: 100%;
+         height: auto;
+         display: block;
+      }
+
+      /* ========================================
+         TYPOGRAPHY & TEXT STYLES
+         ======================================== */
+      .typing-text {
+         color: #000000;
+      }
+
+      /* ========================================
+         HERO SECTION - RESPONSIVE LAYOUT
+         ======================================== */
+      /* Profile Image - Consistent Size */
+     
+      
+
+      .hero-image-box img,
+      .profile-image {
+         width: 260px !important;
+         height: 260px !important;
+         max-width: 260px !important;
+         object-fit: cover;
+         border-radius: 50%;
+         display: block !important;
+         visibility: visible !important;
+      }
+
+      /* Video Wrapper - Responsive */
+      .video-wrapper {
+         width: 260px !important;
+         height: 360px !important;
+         overflow: hidden;
+         border-radius: 16px;
+         margin: 0 auto;
+         display: block !important;
+      }
+
+      .video-wrapper video {
+         width: 100% !important;
+         height: 100% !important;
+         object-fit: cover;
+         display: block !important;
+      }
+/* 
+      /* Mobile Adjustments for Hero Section */
+      @media (max-width: 767px) {
+         
+         .hero-image-box {
+            display: flex !important;
+            justify-content: center;
+            margin-bottom: 20px;
+            margin-top: 10px;
+            
+            width: 100%;
+         }
+
+         .hero-image-box img,
+         .profile-image {
+            width: 200px !important;
+            height: 200px !important;
+            max-width: 200px !important;
+            display: block !important;
+            visibility: visible !important;
+            margin: 0 auto;
+         }
+
+         .video-wrapper {
+            width: 200px !important;
+            height: 280px !important;
+            margin: 20px auto;
+            display: block !important;
+         }
+
+         .hero-title {
+            font-size: 28px !important;
+            text-align: center;
+         }
+
+         .typing-container {
+            text-align: center;
+            font-size: 14px;
+         }
+
+         .lead {
+            text-align: center;
+            font-size: 14px;
+         }
+
+         .button-box {
+            justify-content: center;
+         }
+
+         /* Force column layout on mobile */
+         .hero-wrrapper .row {
+            flex-direction: column;
+         }
+
+         .hero-wrrapper .col-md-3,
+         .hero-wrrapper .col-md-6 {
+            width: 100%;
+            max-width: 100%;
+         }
+      } */
+
+      /* Extra small screens */
+      @media (max-width: 480px) {
+         .hero-image-box img,
+         .profile-image {
+            width: 180px !important;
+            height: 180px !important;
+            max-width: 180px !important;
+         }
+
+         .video-wrapper {
+            width: 180px !important;
+            height: 250px !important;
+         }
+      }
+
+     
+
+      /* ========================================
+         ACHIEVEMENT CARD STYLES
+         ======================================== */
+      .achievement-card {
+         background: #cdccd3d5;
+         border-radius: 16px;
+         padding: 25px;
+         box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+         border: 1px solid #eee;
+         display: flex;
+         align-items: flex-start;
+         gap: 25px;
+         flex-wrap: wrap;
+      }
+
+      .achievement-card .content {
+         flex: 1;
+         min-width: 300px;
+         text-align: left;
+      }
+
+      /* Achievement Logo - Consistent Size */
+      .achievement-card img.logo {
+         width: 80px !important;
+         height: 80px !important;
+         object-fit: cover;
+         border-radius: 12px;
+         margin-bottom: 15px;
+      }
+
+      /* Achievement Image - Consistent Aspect Ratio */
+      .achievement-card img.achievement-img {
+         width: 100%;
+         max-width: 400px;
+         height: auto;
+         aspect-ratio: 1 / 1;
+         object-fit: cover;
+         border-radius: 16px;
+         box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+         flex-shrink: 0;
+      }
+
+      .achievement-card ul {
+         color: #555;
+         line-height: 1.6;
+         margin-top: 15px;
+         padding-left: 20px;
+      }
+
+      /* Responsive: Mobile */
+      @media (max-width: 768px) {
+         .achievement-card {
+            flex-direction: column;
+            align-items: center;
+            padding: 20px !important;
+         }
+
+         .achievement-card img.achievement-img {
+            max-width: 100%;
+         }
+
+         .achievement-card .content {
+            text-align: center;
+         }
+
+         .achievement-card h3 {
+            font-size: 20px !important;
+         }
+
+         .achievement-card h4 {
+            font-size: 16px !important;
+         }
+
+         .achievement-card h5 {
+            font-size: 14px !important;
+         }
+      }
+
+      /* ========================================
+         PROJECT SECTION - RESPONSIVE IMAGES
+         ======================================== */
+      .project-wrapper img,
+      .project-card img {
+         width: 100%;
+         height: auto;
+         aspect-ratio: 16 / 9;
+         object-fit: cover;
+         border-radius: 12px;
+         display: block !important;
+         visibility: visible !important;
+      }
+
+      @media (max-width: 768px) {
+         .projects-scroller {
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+         }
+
+         .project-card {
+            min-width: 280px;
+         }
+
+         .project-wrapper img,
+         .project-card img {
+            width: 100% !important;
+            display: block !important;
+            visibility: visible !important;
+         }
+      }
+
+      /* ========================================
+         PUBLICATION SECTION - RESPONSIVE
+         ======================================== */
+      .publication-item img {
+         width: 100%;
+         height: auto;
+         display: block !important;
+         visibility: visible !important;
+      }
+
+      @media (max-width: 768px) {
+         .publication-item {
+            padding: 20px !important;
+         }
+
+         .publication-item h3 {
+            font-size: 18px !important;
+         }
+
+         .publication-item p {
+            font-size: 14px !important;
+         }
+
+         .publication-item img {
+            width: 100% !important;
+            display: block !important;
+         }
+      }
+
+      /* ========================================
+         COURSE & SKILL PILL STYLES
+         ======================================== */
+      .course-pill {
+         padding: 7px 16px;
+         border-radius: 999px;
+         background: #f8f9fa;
+         color: #333;
+         border: 1px solid #000;
+         font-size: 10px; /* Mobile default */
+         display: inline-block;
+         margin: 4px;
+      }
+
+      .skill-pill {
+         padding: 7px 16px;
+         border-radius: 999px;
+         background: #f8f9fa;
+         color: #333;
+         border: 1px solid #000;
+         font-size: 10px; /* Mobile default */
+         display: inline-block;
+         margin: 4px;
+      }
+
+      /* Tablets & Larger Screens */
+      @media (min-width: 768px) {
+         .course-pill,
+         .skill-pill {
+            font-size: 14px;
+         }
+      }
+
+      /* Desktop Screens */
+      @media (min-width: 992px) {
+         .course-pill,
+         .skill-pill {
+            font-size: 14px;
+         }
+      }
+
+      .skills-card-wrapper {
+         display: grid;
+         grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+         gap: 25px;
+         margin-top: 40px;
+      }
+
+      .skill-card {
+         background: #cdccd3d5;
+         padding: 25px;
+         border-radius: 14px;
+         box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+         transition: all 0.3s ease;
+         border: 1px solid #eee;
+      }
+
+      .skill-card h3 {
+         margin-bottom: 15px;
+         font-size: 20px;
+         color: #111;
+      }
+
+      .skill-list {
+         list-style: none;
+         padding: 0;
+      }
+
+      .skill-list li {
+         padding: 6px 0;
+         font-size: 14px;
+         color: #555;
+         border-bottom: 1px solid #f1f1f1;
+      }
+
+      /* Hover Effect */
+      .skill-card:hover {
+         transform: translateY(-8px);
+         box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+      }
+
+      /* Highlight Web Card */
+      .highlight-card {
+         border: 2px solid #007bff;
+         background: linear-gradient(145deg, #ffffff, #f7fbff);
+      }
+
+/* ========================================
+         CONTACT SECTION - RESPONSIVE
+         ======================================== */
+      @media (max-width: 768px) {
+         .contact-form-box {
+            padding: 20px;
+         }
+
+         .section-title {
+            font-size: 28px !important;
+         }
+      }
+
+      /*  */
+
+      /* ========================================
+         UTILITIES - ASPECT RATIO HELPERS
+         ======================================== */
+      .aspect-ratio-16-9 {
+         aspect-ratio: 16 / 9;
+         object-fit: cover;
+      }
+
+      .aspect-ratio-4-3 {
+         aspect-ratio: 4 / 3;
+         object-fit: cover;
+      }
+
+      .aspect-ratio-1-1 {
+         aspect-ratio: 1 / 1;
+         object-fit: cover;
+      }
+
+      .aspect-ratio-3-4 {
+         aspect-ratio: 3 / 4;
+         object-fit: cover;
+      }
+
+      /* ========================================
+         EMAIL PILL - RESPONSIVE
+         ======================================== */
+      .email-pill {
+         display: inline-block;
+         padding: 6px 20px;
+         background: #f0f0f0;
+         border-radius: 25px;
+         text-decoration: none;
+         letter-spacing: 0.5px;  /* Spacing between characters */
+         font-family:  'Courier New', monospace;
+         color: #000;
+         font-size: 14px;
+      }
+
+      @media (max-width: 768px) {
+         .email-pill {
+            font-size: 12px;
+            padding: 8px 16px;
+         }
+      }
+
+      /* ========================================
+         SOCIAL ICONS - RESPONSIVE
+         ======================================== */
+      .social-icons {
+         display: flex;
+         gap: 10px;
+         flex-wrap: wrap;
+      }
+
+      @media (max-width: 768px) {
+         .social-icons {
+            justify-content: center;
+         }
+      }
+
+      /* ========================================
+         GENERAL MOBILE OPTIMIZATIONS
+         ======================================== */
+      @media (max-width: 768px) {
+         /* Padding adjustments */
+         section {
+            padding: 40px 0 !important;
+         }
+
+         .container {
+            padding: 0 15px;
+         }
+
+         /* Text size adjustments */
+         h1 {
+            font-size: 32px !important;
+         }
+
+         h2 {
+            font-size: 28px !important;
+         }
+
+         h3 {
+            font-size: 22px !important;
+         }
+
+         p {
+            font-size: 14px !important;
+         }
+
+         /* Button adjustments */
+         .tj-btn-primary-2 {
+            padding: 10px 20px;
+            font-size: 14px;
+         }
+      }
+   </style>
+
+   <!-- ========================================
+        JAVASCRIPT LIBRARIES
+        ======================================== -->
+   
+   <!-- jQuery -->
+   <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="assets/js/jquery.min.js"></script>
+   
+   <!-- Bootstrap -->
+   <script src="assets/js/bootstrap.bundle.min.js"></script>
+   
+   <!-- Background Icons -->
+   <script src="assets/js/BackgroundIcons.js" defer></script>
+
+   <!-- GSAP Animation Library -->
+   <script src="assets/js/gsap.min.js"></script>
+   <script src="assets/js/gsap-scroll-to-plugin.min.js"></script>
+   <script src="assets/js/gsap-scroll-trigger.min.js"></script>
+   <script src="assets/js/gsap-split-text.min.js"></script>
+   <script src="assets/js/lenis.min.js"></script>
+
+   <!-- UI Plugins -->
+   <script src="assets/js/nice-select.min.js"></script>
+   <script src="assets/js/backToTop.js"></script>
+   <script src="assets/js/appear.min.js"></script>
+   <script src="assets/js/wow.min.js"></script>
+   
+   <!-- Lightbox & Gallery -->
+   <script src="assets/js/lightcase.js"></script>
+   <script src="assets/js/magnific-popup.js"></script>
+   
+   <!-- Carousels & Sliders -->
+   <script src="assets/js/owl.carousel.min.js"></script>
+   <script src="assets/js/swiper.min.js"></script>
+   
+   <!-- Grid & Layout -->
+   <script src="assets/js/imagesloaded-pkgd.js"></script>
+   <script src="assets/js/isotope.pkgd.min.js"></script>
+   
+   <!-- Counter Animation -->
+   <script src="assets/js/odometer.min.js"></script>
+   
+   <!-- Form Validation -->
+   <script src="assets/js/validate.min.js"></script>
+   
+   <!-- Mobile Menu -->
+   <script src="assets/js/meanmenu.js"></script>
+   
+   <!-- Main Custom Script -->
+   <script src="assets/js/main.js"></script>
+
+   <!-- EmailJS SDK (for contact form) -->
+   <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+   <!-- ========================================
+        CUSTOM JAVASCRIPT
+        ======================================== -->
+   <script>
+      /* ========================================
+         EMAILJS INITIALIZATION & FORM HANDLER
+         ======================================== */
+      (function () {
+         // Initialize EmailJS with your public key
+         emailjs.init("q2RNzmNFApW42Fbkv");
+      })();
+
+      // Handle contact form submission
+      document.getElementById("contact-form")?.addEventListener("submit", function (e) {
+         e.preventDefault();
+
+         // Send form data via EmailJS
+         emailjs.sendForm("service_qci83we", "template_d2wf0rp", this)
+            .then(function () {
+               alert("Message sent successfully!");
+               document.getElementById("contact-form").reset();
+            }, function (error) {
+               console.error("Failed...", error);
+               alert("Failed to send message: " + JSON.stringify(error));
+            });
+      });
+
+      /* ========================================
+         MULTIPLE CHARACTER TYPING ANIMATION
+         ======================================== */
+      document.addEventListener('DOMContentLoaded', function () {
+         const container = document.querySelector('.typing-container');
+         if (!container) return;
+
+         // Clear existing content
+         container.innerHTML = '';
+
+         // Roles to display
+         const roles = [
+            "Roboticist",
+            "Mechatronics Engineer",
+            "AI Learner",
+            "ROS Developer",
+            "Computer Vision Specialist"
+         ];
+
+         // Create multiple typing elements
+         const typingElements = [];
+         for (let i = 0; i < 3; i++) {
+            const typingElement = document.createElement('span');
+            typingElement.className = 'typing-text';
+            typingElement.id = `typing-text-${i}`;
+            container.appendChild(typingElement);
+            container.appendChild(document.createTextNode(' '));
+
+            typingElements.push({
+               element: typingElement,
+               roleIndex: i % roles.length,
+               charIndex: 0,
+               isDeleting: false,
+               delay: i * 500 // Stagger start times
+            });
+         }
+
+         // Typing function for each element
+         function type(elementData) {
+            const currentRole = roles[elementData.roleIndex];
+
+            if (elementData.isDeleting) {
+               // Deleting characters
+               elementData.element.textContent = 
+                  currentRole.substring(0, elementData.charIndex - 1);
+               elementData.charIndex--;
+            } else {
+               // Typing characters
+               elementData.element.textContent = 
+                  currentRole.substring(0, elementData.charIndex + 1);
+               elementData.charIndex++;
+            }
+
+            // Check if finished typing
+            if (!elementData.isDeleting && elementData.charIndex === currentRole.length) {
+               setTimeout(() => {
+                  elementData.isDeleting = true;
+                  type(elementData);
+               }, 2000); // Pause before deleting
+               return;
+            }
+
+            // Check if finished deleting
+            if (elementData.isDeleting && elementData.charIndex === 0) {
+               elementData.isDeleting = false;
+               elementData.roleIndex = (elementData.roleIndex + 1) % roles.length;
+            }
+
+            // Continue animation
+            const typingSpeed = elementData.isDeleting ? 100 : 150;
+            setTimeout(() => type(el
+
+         
+      // Add this to your HTML or JS file
+      const projectsScroller = document.querySelector('.projects-scroller');
+      const leftBtn = document.querySelector('.scroll-nav-btn.left');
+      const rightBtn = document.querySelector('.scroll-nav-btn.right');
+
+      // Scroll amount (one card width + gap)
+      const scrollAmount = 360; // 340px card + 20px gap
+
+      leftBtn.addEventListener('click', () => {
+         projectsScroller.scrollBy({
+            left: -scrollAmount,
+            behavior: 'smooth'
+         });
+      });
+
+      rightBtn.addEventListener('click', () => {
+         projectsScroller.scrollBy({
+            left: scrollAmount,
+            behavior: 'smooth'
+         });
+      });
+
+      // Optional: Disable buttons at scroll edges
+      projectsScroller.addEventListener('scroll', () => {
+         leftBtn.disabled = projectsScroller.scrollLeft === 0;
+         rightBtn.disabled = 
+            projectsScroller.scrollLeft >= 
+            projectsScroller.scrollWidth - projectsScroller.clientWidth;
+      });

@@ -1,0 +1,57 @@
+/* Typing Animation */
+.typing-container {
+  display: block;
+  position: relative;
+  margin-top: 15px;
+  min-height: 24px; /* Ensure space for multiple lines */
+}
+
+.typing-text {
+  display: inline-block;
+  font-size: 18px;
+  color: #666;
+  opacity: 0.8;
+  font-weight: 400;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid #666;
+  animation: blink 0.7s infinite;
+  margin-right: 5px; /* Space between elements */
+}
+
+/* Different colors for each typing element */
+.typing-text:nth-child(1) {
+  color: #4a6fa5; /* Blue */
+}
+
+.typing-text:nth-child(3) {
+  color: #6a4a5c; /* Purple */
+}
+
+.typing-text:nth-child(5) {
+  color: #5a8a6f; /* Green */
+}
+
+@keyframes blink {
+  0%, 100% { border-color: transparent; }
+  50% { border-color: currentColor; }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .typing-text {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 576px) {
+  .typing-text {
+    font-size: 14px;
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  .typing-container {
+    min-height: 50px; /* More space for stacked elements on mobile */
+  }
+}
